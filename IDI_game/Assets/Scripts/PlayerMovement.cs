@@ -4,6 +4,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rigidbody;
 
+    public GameObject soul;
+
     [SerializeField]
     private float speed;
 
@@ -35,9 +37,10 @@ public class PlayerMovement : MonoBehaviour
         if (c.gameObject.tag == "Food")
         {
             souls++;
-            transform.localScale = new Vector3(transform.localScale.x + 1.0f, transform.localScale.y + 1.0f, transform.localScale.z);
+            transform.localScale = new Vector3(transform.localScale.x + 0.005f, transform.localScale.y + 0.005f, transform.localScale.z);
 
             Destroy(c.gameObject);
+            Instantiate(soul, new Vector3(5, 2, 0), Quaternion.identity);
         }
     }
 
