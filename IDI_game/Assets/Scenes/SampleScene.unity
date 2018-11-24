@@ -406,6 +406,7 @@ MonoBehaviour:
   rigidbody: {fileID: 0}
   speed: 10
   max_speed: 1000
+  souls: 0
   bounds: 0
   minPlayerPos: {x: 0, y: 0, z: 0}
   maxPlayerPos: {x: 0, y: 0, z: 0}
@@ -692,8 +693,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 45.149994, y: -14.829987}
-  m_SizeDelta: {x: 91.31, y: 28.66}
+  m_AnchoredPosition: {x: 91.12, y: -14.829987}
+  m_SizeDelta: {x: 183.25, y: 28.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1919430902
 MonoBehaviour:
@@ -727,7 +728,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1919430903
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -743,8 +744,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1919430900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e959a92b94413e1488dc75011cc38cbd, type: 3}
+  m_Script: {fileID: 11500000, guid: 91cc50ce41747c541bee3c91090a9d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterText: {fileID: 0}
-  seconds: 0
+  soulText: {fileID: 0}
+  playermovement: {fileID: 0}

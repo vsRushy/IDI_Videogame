@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float max_speed;
 
+    public uint souls = 0;
+
     // Player boundaries
     public bool bounds;
     public Vector3 minPlayerPos;
@@ -32,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (c.gameObject.tag == "Food")
         {
+            souls++;
             transform.localScale = new Vector3(transform.localScale.x + 1.0f, transform.localScale.y + 1.0f, transform.localScale.z);
 
             Destroy(c.gameObject);
