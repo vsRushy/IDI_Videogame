@@ -2,11 +2,15 @@
 
 public class CameraFollow : MonoBehaviour
 {
-    private Vector2 velocity;
-    public float smoothTimeX;
-    public float smoothTimeY;
+    Vector3 velocity = Vector3.zero;
+    public float smoothTime;
 
     public GameObject player;
+
+    // Camera boundaries
+    public bool bounds;
+    public Vector3 minCameraPos;
+    public Vector3 maxCameraPos;
 
 	// Use this for initialization
 	void Start ()
@@ -16,9 +20,15 @@ public class CameraFollow : MonoBehaviour
 	
 	void FixedUpdate()
     {
-        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
-        float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeY);
+        Vector3 targetPos = player.transform.position;
+        targetPos.z = transform.position.z;
+        transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, smoothTime);
 
-        transform.position = new Vector3(posX, posY, transform.position.z);
+        if(bounds)
+        {
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, minCameraPos.x, maxCameraPos.x),
+                Mathf.Clamp(transform.position.y, minCameraPos.y, maxCameraPos.y),
+                Mathf.Clamp(transform.position.z, minCameraPos.z, maxCameraPos.z));
+        }
     }
 }
