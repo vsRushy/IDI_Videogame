@@ -5,10 +5,10 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rigidbody;
 
     [SerializeField]
-    private float speed = 0.0f;
+    private float speed;
 
     [SerializeField]
-    private float max_speed = 0.0f;
+    private float max_speed;
 
     // Player boundaries
     public bool bounds;
@@ -21,23 +21,23 @@ public class PlayerMovement : MonoBehaviour
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
     }
 
-	// Update is called once per frame
-	void FixedUpdate ()
+    // Update is called once per frame
+    void FixedUpdate()
     {
         Move();
         PlayerBoundaries();
-	}
+    }
 
     void OnTriggerEnter2D(Collider2D c)
     {
-        if(c.gameObject.tag == "Food")
+        if (c.gameObject.tag == "Food")
         {
-            transform.localScale = new Vector3(transform.localScale.x + 0.02f, transform.localScale.y + 0.02f, transform.localScale.z);
+            transform.localScale = new Vector3(transform.localScale.x + 1.0f, transform.localScale.y + 1.0f, transform.localScale.z);
 
             Destroy(c.gameObject);
         }
     }
-    
+
     // ---------------------------
     public void Move()
     {
@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         float v = Input.GetAxisRaw("Vertical");
         rigidbody.AddForce(Vector2.up * speed * v * Time.deltaTime);
 
-        LimitMovement();
+        //LimitMovement();
     }
 
     public void LimitMovement()
