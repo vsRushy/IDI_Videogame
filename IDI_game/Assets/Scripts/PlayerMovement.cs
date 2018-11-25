@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rigidbody;
 
-    public GameObject soul;
+    public GameObject soul; // Prefab of the soul
 
     [SerializeField]
     private float speed;
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(transform.localScale.x + 0.005f, transform.localScale.y + 0.005f, transform.localScale.z);
 
             Destroy(c.gameObject);
-            Instantiate(soul, new Vector3(5, 2, 0), Quaternion.identity);
+            Instantiate(soul, new Vector3(Random.Range(-18.5f, 18.5f), Random.Range(-10.0f, 10.0f), 0), Quaternion.identity);
         }
     }
 

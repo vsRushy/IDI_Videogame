@@ -315,11 +315,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &402360317 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1186557591681020, guid: 29ad9e402f2523b4db56cfe06ad5d0c0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1204672265}
 --- !u!4 &402360319 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4952100812414070, guid: 29ad9e402f2523b4db56cfe06ad5d0c0,
@@ -554,7 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 0}
-  soul: {fileID: 402360317}
+  soul: {fileID: 1186557591681020, guid: 29ad9e402f2523b4db56cfe06ad5d0c0, type: 2}
   speed: 10
   max_speed: 1000
   souls: 0
@@ -664,11 +659,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4952100812414070, guid: 29ad9e402f2523b4db56cfe06ad5d0c0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.6259265
+      value: -6.36
       objectReference: {fileID: 0}
     - target: {fileID: 4952100812414070, guid: 29ad9e402f2523b4db56cfe06ad5d0c0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.8942928
+      value: -4.66
       objectReference: {fileID: 0}
     - target: {fileID: 4952100812414070, guid: 29ad9e402f2523b4db56cfe06ad5d0c0, type: 2}
       propertyPath: m_LocalPosition.z
