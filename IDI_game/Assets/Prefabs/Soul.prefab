@@ -8,19 +8,19 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1186557591681020}
-  m_IsPrefabAsset: 1
---- !u!1 &1186557591681020
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1867633876222608}
+  m_IsPrefabParent: 1
+--- !u!1 &1867633876222608
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
+  serializedVersion: 5
   m_Component:
-  - component: {fileID: 4952100812414070}
-  - component: {fileID: 212802849099801222}
-  - component: {fileID: 58606734828425870}
+  - component: {fileID: 4339905814830578}
+  - component: {fileID: 212184902101163134}
+  - component: {fileID: 58270380776533896}
   m_Layer: 0
   m_Name: Soul
   m_TagString: Food
@@ -28,25 +28,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4952100812414070
+--- !u!4 &4339905814830578
 Transform:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1186557591681020}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.6259265, y: -1.8942928, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1867633876222608}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.64, y: 0.91, z: -9}
+  m_LocalScale: {x: 0.3688279, y: 0.3688279, z: 0.3688279}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58606734828425870
+--- !u!58 &58270380776533896
 CircleCollider2D:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1186557591681020}
+  m_GameObject: {fileID: 1867633876222608}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -56,12 +56,12 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.185
---- !u!212 &212802849099801222
+--- !u!212 &212184902101163134
 SpriteRenderer:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1186557591681020}
+  m_GameObject: {fileID: 1867633876222608}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -91,7 +91,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b59a5b321883111448fb36a944fa3f90, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bb3826a9f64d850479f430349dece592, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,4 +101,3 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
