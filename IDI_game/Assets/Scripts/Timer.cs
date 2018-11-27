@@ -5,7 +5,10 @@ public class Timer : MonoBehaviour
 {
 	public Text counterText;
 
+    public float timer;
+    
 	public float seconds;
+    public float minutes;
 
 	// Use this for initialization
 	void Start()
@@ -16,7 +19,10 @@ public class Timer : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		seconds = (int)(Time.timeSinceLevelLoad);
-		counterText.text = seconds.ToString("00");
+        timer += Time.deltaTime;
+        minutes = Mathf.Floor(timer / 60.0f);
+        seconds = timer % 60.0f;
+        
+        counterText.text = "Minutes: " + minutes.ToString("00") + " Seconds: " + seconds.ToString("00");
 	}
 }
