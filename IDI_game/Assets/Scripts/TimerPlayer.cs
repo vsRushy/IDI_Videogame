@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerPlayer : MonoBehaviour
 {
@@ -31,7 +31,12 @@ public class TimerPlayer : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        
+        // Check if player reaches minimum size to end the game
+        Vector3 temp_size = transform.localScale;
+        if(temp_size.x < 0.0f)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
 	}
 
     void ReduceScale()
