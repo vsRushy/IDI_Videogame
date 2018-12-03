@@ -7,8 +7,8 @@ public class Timer : MonoBehaviour
 
     public float timer;
     
-	public float seconds;
-    public float minutes;
+	public static float seconds;
+    public static float minutes;
 
 	// Use this for initialization
 	void Start()
