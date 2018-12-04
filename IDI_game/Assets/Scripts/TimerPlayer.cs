@@ -6,6 +6,8 @@ public class TimerPlayer : MonoBehaviour
     private int difficulty;
     private float reducing_time;
 
+    public static int game_end = 0; // 0 NULL, 1 win, 2 lose
+
     // Use this for initialization
     void Start ()
     {
@@ -35,6 +37,13 @@ public class TimerPlayer : MonoBehaviour
         Vector3 temp_size = transform.localScale;
         if(temp_size.x < 0.0f)
         {
+            game_end = 2;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        // Check if player reaches maximum size to win the game
+        else if(temp_size.x > 5.0f)
+        {
+            game_end = 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 	}
