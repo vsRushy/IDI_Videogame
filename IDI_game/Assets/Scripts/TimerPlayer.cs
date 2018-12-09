@@ -41,7 +41,7 @@ public class TimerPlayer : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         // Check if player reaches maximum size to win the game
-        else if(temp_size.x > 5.0f)
+        else if(temp_size.x > 0.75f)
         {
             game_end = 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
