@@ -1,12 +1,16 @@
 Player Speed: 
 50
 Number of souls generated: 
-0
+20
 Number of souls collected: 
 0
 Player color: 
-Blue
+White
 Spikes color: 
-Red
-Win(1) / Lose(0)
-
+White
+Win(1) / Lose(2):
+2
+Time played:
+Minutes: 0 Seconds: 2.873885
+Difficulty[1: easy, 2: normal, 3: hard]: 
+2
