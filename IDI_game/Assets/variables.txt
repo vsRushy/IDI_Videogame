@@ -1,9 +1,12 @@
 Player Speed: 
 50
 Number of souls generated: 
-20
+0
 Number of souls collected: 
-2
-Player Color: 
-
+0
+Player color: 
+Red
 Food color: 
+
+Win(1) / Lose(0)
+

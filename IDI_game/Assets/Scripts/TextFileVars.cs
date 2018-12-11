@@ -5,6 +5,7 @@ public class TextFileVars : MonoBehaviour
     string speed = "";
     string souls_generated = "";
     string souls_collected = "";
+    string player_color = "";
 
     string[] lines = { "Player Speed: ", "",
         "Number of souls generated: ", "",
@@ -25,6 +26,9 @@ public class TextFileVars : MonoBehaviour
         souls_collected = PlayerMovement.final_souls.ToString();
         lines[5] = this.souls_collected;
 
-        System.IO.File.WriteAllLines(@"C:/Users/gerardmf2/Documents/GitHub/IDI_Videogame/IDI_game/Assets/variables.txt", lines);
+        player_color = PlayerMovement.color_name;
+        lines[7] = this.player_color;
+
+        System.IO.File.WriteAllLines(@"C:\Users\usuario\Documents\GitHub\IDI_Videogame\IDI_game\Assets\variables.txt", lines);
     }
 }
