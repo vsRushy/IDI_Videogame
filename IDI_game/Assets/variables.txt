@@ -1,7 +1,9 @@
 Player Speed: 
 50
-Number of seeds: 
-
+Number of souls generated: 
+20
+Number of souls collected: 
+2
 Player Color: 
 
 Food color: 
