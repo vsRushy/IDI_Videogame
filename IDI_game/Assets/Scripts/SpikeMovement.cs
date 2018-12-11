@@ -5,6 +5,7 @@ public class SpikeMovement : MonoBehaviour
     private int difficulty;
 
     public Rigidbody2D rb;
+    public SpriteRenderer sr;
 
     public float accelerationTime;
     public float maxSpeed = 5f;
@@ -13,6 +14,8 @@ public class SpikeMovement : MonoBehaviour
 
     void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
+
         difficulty = DifficultyNum.difficulty;
         switch(difficulty)
         {
@@ -40,6 +43,24 @@ public class SpikeMovement : MonoBehaviour
         {
             movement = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
             timeLeft += accelerationTime;
+        }
+
+        // Change color
+        if(Input.GetKeyUp(KeyCode.Keypad1))
+        {
+            sr.color = Color.white;
+        }
+        if (Input.GetKeyUp(KeyCode.Keypad2))
+        {
+            sr.color = Color.red;
+        }
+        if (Input.GetKeyUp(KeyCode.Keypad3))
+        {
+            sr.color = Color.blue;
+        }
+        if (Input.GetKeyUp(KeyCode.Keypad4))
+        {
+            sr.color = Color.green;
         }
     }
 
