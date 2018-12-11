@@ -3,7 +3,7 @@
 public class TextFileVars : MonoBehaviour
 {
 
-    int speed = 5;
+    string speed = "";
 
     string[] lines = { "Player Speed: ", "", "Number of seeds: ", "", "Player Color: ", "", "Food color: " };
 
@@ -19,8 +19,9 @@ public class TextFileVars : MonoBehaviour
 
     public void SetVariables()
     {
+        speed = PlayerMovement.speed.ToString();
+        lines[1] = this.speed;
 
-        lines[1] = speed.ToString();
         System.IO.File.WriteAllLines(@"C:/Users/gerardmf2/Documents/GitHub/IDI_Videogame/IDI_game/Assets/variables.txt", lines);
     }
 }
