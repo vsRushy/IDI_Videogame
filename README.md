@@ -1,5 +1,9 @@
 # IDI_Videogame
 
+## Group 05
+
+Gerard Marcos, Martí Torras, José Antonio Prieto.
+
 ## Controls
 
 Arrow keys: move player
