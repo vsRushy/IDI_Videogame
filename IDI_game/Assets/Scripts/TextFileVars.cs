@@ -9,7 +9,9 @@ public class TextFileVars : MonoBehaviour
     string[] lines = { "Player Speed: ", "",
         "Number of souls generated: ", "",
         "Number of souls collected: ", "",
-        "Player Color: ", "", "Food color: "
+        "Player color: ", "",
+        "Food color: ", "",
+        "Win(1) / Lose(0)", ""
     };
 
     public void SetVariables()
