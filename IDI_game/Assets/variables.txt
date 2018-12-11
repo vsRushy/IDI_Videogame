@@ -5,8 +5,8 @@ Number of souls generated:
 Number of souls collected: 
 0
 Player color: 
+Blue
+Spikes color: 
 Red
-Food color: 
-
 Win(1) / Lose(0)
 

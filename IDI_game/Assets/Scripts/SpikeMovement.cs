@@ -12,6 +12,8 @@ public class SpikeMovement : MonoBehaviour
     private Vector2 movement;
     private float timeLeft;
 
+    public static string spike_color = "White";
+
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -48,18 +50,22 @@ public class SpikeMovement : MonoBehaviour
         // Change color
         if(Input.GetKeyUp(KeyCode.Keypad1))
         {
+            spike_color = "White";
             sr.color = Color.white;
         }
         if (Input.GetKeyUp(KeyCode.Keypad2))
         {
+            spike_color = "Red";
             sr.color = Color.red;
         }
         if (Input.GetKeyUp(KeyCode.Keypad3))
         {
+            spike_color = "Blue";
             sr.color = Color.blue;
         }
         if (Input.GetKeyUp(KeyCode.Keypad4))
         {
+            spike_color = "Green";
             sr.color = Color.green;
         }
     }
