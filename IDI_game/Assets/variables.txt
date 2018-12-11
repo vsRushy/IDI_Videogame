@@ -1,0 +1,7 @@
+Player Speed: 
+5
+Number of seeds: 
+
+Player Color: 
+
+Food color: 
